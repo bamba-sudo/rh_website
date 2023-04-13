@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Devis</title>
+    <%- include('../header/header.ejs') -%>
+</head>
+
+<body>
+    <%- include('../topbar/topbar.ejs') -%>
+
+        <%- include('../navbar/navbar.ejs') -%>
+            <!-- Quote Start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="row g-5">
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <p class="fs-5 fw-medium text-primary">Demande de devis</p>
+                            <h1 class="display-5 mb-4">Recruter les meilleurs candidats !</h1>
+                            <p>Profitez d’un service de recrutement personnalisés
+                                et soyez accompagné par une équipe
+                                expérimentée.</p>
+                            <a class="d-inline-flex align-items-center rounded overflow-hidden border border-primary"
+                                href="">
+                                <span class="btn-lg-square bg-primary" style="width: 55px; height: 55px;">
+                                    <i class="fa fa-phone-alt text-white"></i>
+                                </span>
+                                <span class="fs-5 fw-medium mx-4">+1 438 836 4824</span>
+                            </a>
+                        </div>
+                        <form method="post" action="/submit">
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <h2 class="mb-4">Demande de devis gratuite</h2>
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" name="name" id="name"
+                                                placeholder="Your Name">
+                                            <label for="name">Votre nom complet</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" name="mail" id="mail"
+                                                placeholder="Your Email">
+                                            <label for="mail">Votre email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" name="mobile" id="mobile"
+                                                placeholder="Your Mobile">
+                                            <label for="mobile">Votre téléphone</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" name="mobileposte" id="mobile-poste"
+                                                placeholder="Your Mobile">
+                                            <label for="mobile">Votre numéro de poste</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" name="namebusiness"
+                                                id="name-business" placeholder="Your Name">
+                                            <label for="name">Nom de votre entreprise</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="service">
+                                                <option selected>Digital Marketing</option>
+                                                <option value="">Social Marketing</option>
+                                                <option value="">Content Marketing</option>
+                                                <option value="">E-mail Marketing</option>
+                                            </select>
+                                            <label for="service">Titre professionnel</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" name="message"
+                                                placeholder="Leave a message here" id="message"
+                                                style="height: 130px"></textarea>
+                                            <label for="message">Veuillez détaillez votre demande</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Soumettre</button>
+                                    </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            <!-- Quote Start -->
+            <%- include('../footer/footer.ejs') -%>
+                <%- include('../js/script.ejs') -%>
+
+</body>
+
+</html>
